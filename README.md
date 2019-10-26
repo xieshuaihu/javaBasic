@@ -3,7 +3,7 @@
 
 ## 1.printABC
 多线程依次打印ABC
-主要知识点：Semaphore
+主要知识点：Semaphore/n
 Semaphore.acquire();
 Semaphore.release();
 
