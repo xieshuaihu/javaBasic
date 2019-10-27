@@ -13,3 +13,7 @@ Semaphore.release();
 通过Wait和Notify方法实现多线程打印ABC  
 主要知识点：Wait，Notify，Synchronized  
 只有获得了对象的锁，才可以调用对象的Wait方法；在调用wait后，会让出对象锁；在调用notifyAll后会让所用wait的线程解除wait状态，重新参与锁的竞争，只有再次获得锁后才会继续向下运行。  
+## 4.printABCCondition  
+通过ReentrantLock及Condition实现多线程打印ABC  
+主要知识点：ReentrantLock，Condition  
+与通过Wait和Notify实现打印ABC的思路一致，ReentrantLock.lock()等价于synchronized(Object), Condition.await()等价于Object.wait(), Condition.signalAll()等价于Object.notifyAll();  
