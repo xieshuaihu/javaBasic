@@ -25,7 +25,7 @@ class Printer extends Thread{
         this.b = b;
         this.s = s;
     };
-    public synchronized void run(){
+    public void run(){
         for(int i = 0; i < 100; ++i) {
             try
             {
